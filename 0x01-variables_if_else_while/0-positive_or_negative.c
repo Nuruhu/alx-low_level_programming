@@ -5,7 +5,7 @@
 
 /* betty style doc for function main goes there */
 
-/* main - entry point */
+/* main - Prints if number is positive, zero or negative */
 /* if else statment check for any n input and display the output */  
 int main(void)
 {
