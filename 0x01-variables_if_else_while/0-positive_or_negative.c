@@ -6,7 +6,7 @@
 /* betty style doc for function main goes there */
 
 /* main - Prints if number is positive, zero or negative */
-/* if else statment check for any n input and display the output */  
+/* Return: Always (Success) */  
 int main(void)
 {
 	int n;
