@@ -5,10 +5,9 @@
 
 /* betty style doc for function main goes there */
 
-/* main - entry point
- *
- * if else check statment for ant n input and display the output
- */ 
+/* main - entry point */
+ 
+/* if else check statment for ant n input and display the output */  
 int main(void)
 {
 	int n;
