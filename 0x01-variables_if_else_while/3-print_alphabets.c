@@ -2,6 +2,8 @@
 /**
  * main - prints alphabet in lowercase then in uppercase
  *
+ * Description: this program use for loop
+ *
  * return: always 0 (success)
  */
 int main(void)
