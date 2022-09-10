@@ -4,7 +4,7 @@
  *
  * return: always 0 (success)
  */
-int main(char)
+int main()
 {
 	char let;
 
