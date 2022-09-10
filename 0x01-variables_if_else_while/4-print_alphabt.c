@@ -13,6 +13,6 @@ int main(void)
 		if (let != 'e' && let != 'q')
 			putchar(let);
 	}
-	putchar(let);
+	putchar('\n');
 	return (0);
 }
