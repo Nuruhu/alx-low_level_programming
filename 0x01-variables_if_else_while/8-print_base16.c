@@ -2,7 +2,7 @@
 /**
  * main - prints base 16 and a to f
  *
- * return: always zero it is nice
+ * Return: Always zero it is nice
  */
 int main(void)
 {
