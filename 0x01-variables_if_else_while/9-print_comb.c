@@ -2,20 +2,19 @@
 /**
  * main - print all possible combination of single digits
  *
- * return: always zero
+ * Return: Always zero
  */
 int main(void)
 {
-	int y;
+	int i = 0;
 
-	for (y = 0; y < 10; y++)
+	do
 	{
-		putchar((y % 10) + '0');
-			if (y < 10)
-				continue;
-				putchar(',');
+		putchar((i % 10) + '0');
+		putchar(',');
 		putchar(' ');
-	}
-		putchar('\n');
-		return (0);
+		i++;
+	}while(i <= 9);
+	putchar('\n');
+	return (0);
 }
