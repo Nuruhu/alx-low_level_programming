@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	int i;
+	int t;
 
-	for (i = 0; i <= 9; i++)
+	for (t = 0; t <= 9; t++)
 	{
-		putchar((i % 10) + '0');
-		if (i == 8)
+		putchar((t % 10) + '0');
+		if (t ==9)
 			continue;
 		putchar(',');
 		putchar(' ');
@@ -19,3 +19,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
