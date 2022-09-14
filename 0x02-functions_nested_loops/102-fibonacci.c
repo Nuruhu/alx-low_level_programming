@@ -19,10 +19,10 @@ int main(void)
 		if (i == 50)
 			continue;
 		{
-	         putchar(',');
-                 putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	printf("\n");
-	return (0);
+		putchar('\n');
+		return (0);
 }
