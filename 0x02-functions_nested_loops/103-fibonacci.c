@@ -10,7 +10,7 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	n = 0;
+	n = 2;
 	for (i = 1; i < 100; i++)
 	{
 		sum = a + b;
