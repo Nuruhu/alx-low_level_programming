@@ -14,7 +14,7 @@ int main(void)
 	int i;
 	char x[] = "Fizz";
 		char y[] = "Buzz";
-		char xy[] = "FizzBuzz"
+		char xy[] = "FizzBuzz";
 
 			for (i = 1; i <= 100; i++)
 			{
