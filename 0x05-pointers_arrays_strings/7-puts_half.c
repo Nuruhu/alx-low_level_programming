@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * put_half - prints half of the strong
+ * puts_half - prints half of the strong
  * @str: str input
  */
 void puts_half(char *str)
