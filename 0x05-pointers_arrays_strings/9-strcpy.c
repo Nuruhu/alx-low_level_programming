@@ -3,6 +3,8 @@
  * _strcpy - copy string
  * @dest: copy to
  * @src: copy from
+ *
+ * Return: string
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -12,4 +14,5 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
+	return (dest);
 }
