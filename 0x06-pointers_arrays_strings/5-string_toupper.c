@@ -3,6 +3,8 @@
  * string_toupper - function that changes all
  * lowercase letters
  * @s: input string
+ *
+ * Return: string input
  */
 char *string_toupper(char *s)
 {
@@ -13,5 +15,5 @@ char *string_toupper(char *s)
 		if (s[i] >= 'a' && s[i] <= 'z')
 			s[i] = s[i] - 32;
 	}
-	return (0);
+	return (s);
 }
