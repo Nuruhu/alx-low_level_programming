@@ -2,6 +2,8 @@
 /**
  * cap_string - capitalizes all words of a string
  * @s: pointer to string
+ *
+ * Return: uppercase letter string
  */
 char *cap_string(char *s)
 {
