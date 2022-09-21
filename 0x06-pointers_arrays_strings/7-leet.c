@@ -17,8 +17,8 @@ char *leet(char *s)
 		{
 			if (s[i] == l[j])
 			{
-				s[i] = n[j / 2];
-				j = 9;
+				s[i] = n[j];
+				break;
 			}
 		}
 	}
