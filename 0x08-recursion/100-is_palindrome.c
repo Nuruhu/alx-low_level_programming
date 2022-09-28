@@ -5,10 +5,10 @@
  *
  * Return: string length
  */
-int strlen(char *s)
+int strl(char *s)
 {
 	if (*s != '\0')
-		return (1 + strlen(s + 1));
+		return (1 + strl(s + 1));
 	return (0);
 }
 /**
@@ -41,7 +41,7 @@ int is_palindrome(char *s)
 {
 	int length;
 
-	length = strlen(s);
+	length = strl(s);
 	if (length == 0)
 		return (1);
 	return (pld(s, 0, length - 1));
