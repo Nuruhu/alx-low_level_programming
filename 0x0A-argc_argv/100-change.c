@@ -14,22 +14,22 @@ int convCoin(int c)
 	while (c != 0)
 	{
 		if (c % 10 == 9 || c % 10 == 7)
-			c = c - 2;
+			c -= 2;
 		else if (c % 25 == 0)
-			c = c - 25;
+			c -= 25;
 		else if (c % 10 == 0)
-			c = c - 10;
+			c -= 10;
 		else if (c % 5 == 0)
-			c = c - 5;
+			c -= 5;
 		else if (c % 2 == 0)
 		{
 			if (c % 10 == 6)
-				c = c - 1;
+				c -= 1;
 			else
-				c = c - 2;
+				c -= 2;
 		}
 		else
-			c = c - 1;
+			c -= 1;
 		i++;
 	}
 	return (i);
