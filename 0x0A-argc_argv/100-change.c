@@ -41,7 +41,7 @@ int convCoin(int c)
  *
  * Return: zero (success)
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int x;
 	int coin = 0;
