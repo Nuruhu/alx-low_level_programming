@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * convCoin - convert user input argument to coin
- * @c: argument to be converted
+ * convCoin - convert input argument to coin
+ * @c: argument to converted
  *
  * Return: converted argument
  */
@@ -35,7 +35,7 @@ int convCoin(int c)
 	return (i);
 }
 /**
- * main - print the minimum number of coins
+ * main - print the minimum number of coin
  * @argc: argument count
  * @argv: argument vector
  *
@@ -43,8 +43,7 @@ int convCoin(int c)
  */
 int main(int argc, char **argv)
 {
-	int x;
-	int coin = 0;
+	int x, coin = 0;
 
 	if (argc != 2)
 	{
