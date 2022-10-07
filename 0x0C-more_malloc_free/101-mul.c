@@ -166,7 +166,7 @@ int main(int argc, char *argv[])
 {
 	char *p1, *p2;
 	int size, i, digit, zero = 0;
-	
+
 	if (argc != 3)
 	{
 		_putchar('E');
