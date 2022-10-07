@@ -34,6 +34,7 @@ char *array(int size)
 		ptr[i] = 'x';
 	ptr[i] = '\0';
 	return (ptr);
+	free(ptr);
 }
 /**
  * loop_aroundZero - loop around the number that
@@ -44,7 +45,7 @@ char *array(int size)
  */
 char *loop_aroundZero(char *str)
 {
-	while (*str == '\0')
+	while (*str && *str == '0')
 		str++;
 	return (str);
 }
@@ -151,6 +152,7 @@ void addition(char *fr, char *nr, int nl)
 		fr--;
 		nr--;
 	}
+
 	if (n2)
 		*fr = (n2 % 10) + '0';
 }
@@ -161,7 +163,7 @@ void addition(char *fr, char *nr, int nl)
  *
  * Return: zero (success)
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	char *p1, *p2;
 	int size, i, digit, zero = 0;
@@ -188,6 +190,7 @@ int main(int argc, char **argv)
 	size = calculate_length(argv[1]) + calculate_length(argv[2]);
 	p1 = array(size + 1);
 	p2 = array(size + 1);
+
 	for (i = calculate_length(argv[2]) - 1; i >= 0; i--)
 	{
 		digit = convert_to_digit(*(argv[2] + i));
@@ -199,8 +202,7 @@ int main(int argc, char **argv)
 		if (p1[i] != 'x')
 			putchar(p1[i]);
 	}
-	putchar('\n');
-	free(p1);
 	free(p2);
+	free(p1);
 	return (0);
 }
