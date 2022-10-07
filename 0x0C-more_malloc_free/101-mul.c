@@ -152,7 +152,6 @@ void addition(char *fr, char *nr, int nl)
 		fr--;
 		nr--;
 	}
-
 	if (n2)
 		*fr = (n2 % 10) + '0';
 }
@@ -190,7 +189,6 @@ int main(int argc, char *argv[])
 	size = calculate_length(argv[1]) + calculate_length(argv[2]);
 	p1 = array(size + 1);
 	p2 = array(size + 1);
-
 	for (i = calculate_length(argv[2]) - 1; i >= 0; i--)
 	{
 		digit = convert_to_digit(*(argv[2] + i));
