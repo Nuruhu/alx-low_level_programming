@@ -166,7 +166,7 @@ int main(int argc, char *argv[])
 {
 	char *p1, *p2;
 	int size, i, digit, zero = 0;
-
+	
 	if (argc != 3)
 	{
 		_putchar('E');
@@ -200,6 +200,7 @@ int main(int argc, char *argv[])
 		if (p1[i] != 'x')
 			putchar(p1[i]);
 	}
+	putchar('\n');
 	free(p2);
 	free(p1);
 	return (0);
