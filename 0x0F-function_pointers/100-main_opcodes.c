@@ -11,8 +11,8 @@ int main(int argc, char **argv)
 {
 	int n_bytes = 0;
 	int i;
-	void *magic_ptr = NULL;
-	char *final_ptr = NULL;
+	void *hack_main_pointer = NULL;
+	char *final_pointer = NULL;
 
 	if (argc != 2)
 	{
@@ -28,12 +28,12 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 
-	magic_ptr = main;
-	final_ptr = magic_ptr;
+	hack_main_pointer = main;
+	final_pointer = hack_main_pointer;
 
 	for (i = 0; i < n_bytes; i++)
 	{
-		printf("%02x", final_ptr[i] & 0xFF);
+		printf("%02x", final_pointer[i] & 0xFF);
 		if (i < n_bytes - 1)
 			putchar(' ');
 	}
